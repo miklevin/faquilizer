@@ -1,4 +1,4 @@
-NOTEBOOK_TEMPLATE = """
+NOTEBOOK_TEMPLATE = r'''
 # Paste the entire contents of this output into a new Jupyter Notebook.
 # This template provides a complete, runnable workflow.
 
@@ -45,11 +45,11 @@ if api_key:
 # Cell 4: List Input (Code)
 ## Paste your list of URLs between the triple quotes below.
 URL_LIST_STEP = "url_list"
-EASILY_PASTED_LIST = '''
+EASILY_PASTED_LIST = """
 https://www.google.com
 https://www.github.com
 https://www.mikelev.in
-'''.split("\n")[1:-1]
+""".split("\n")[1:-1]
 
 pip.set(job, URL_LIST_STEP, EASILY_PASTED_LIST)
 urls_to_process = pip.get(job, URL_LIST_STEP, [])
@@ -150,4 +150,4 @@ try:
     print(f"✅ Success! Data exported to '{output_filename}'")
 except Exception as e:
     print(f"❌ Failed to export to Excel: {e}")
-"""
+'''
