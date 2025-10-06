@@ -117,8 +117,8 @@ styled_df = df_final.style.set_properties(**{
     'white-space': 'pre-wrap',
 }).set_table_styles([
     {'selector': 'th', 'props': [('text-align', 'left'), ('font-weight', 'bold')]},
-    {'selector': 'tr:nth-of-type(odd)', 'props': [('background-color', '#f9f9f9')]},
-    {'selector': 'tr:nth-of-type(even)', 'props': [('background-color', 'white')]}
+    # {'selector': 'tr:nth-of-type(odd)', 'props': [('background-color', '#f9f9f9')]}, # Removed for white background
+    # {'selector': 'tr:nth-of-type(even)', 'props': [('background-color', 'white')]} # Removed for white background
 ]).hide(axis="index")
 
 display(styled_df)
