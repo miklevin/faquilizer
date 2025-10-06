@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "faqulizer"
-version = "0.2.0"
+name = "faquilizer"
+version = "0.1.1"
 authors = [
   { name="Mike Levin", email="pipulate@gmail.com" },
 ]

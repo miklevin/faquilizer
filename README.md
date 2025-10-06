@@ -6,10 +6,10 @@ A simple, `pip install`-able package that provides a Jupyter Notebook template f
 
 1.  In a new notebook (like Google Colab):
     ```python
-    !pip install faqulizer
+    !pip install faquilizer
     ```
 2.  In the next cell, run:
     ```python
-    import faqulizer
+    import faquilizer
     ```
 3.  Copy the template output and paste it into a new cell to get started.
