@@ -1,4 +1,4 @@
-# Faquillizer
+# Faquilizer
 
 A simple, `pip install`-able package that provides a Jupyter Notebook template for processing lists of URLs with AI.
 
