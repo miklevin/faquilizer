@@ -1,3 +1,4 @@
+NOTEBOOK_TEMPLATE = """
 # Paste the entire contents of this output into a new Jupyter Notebook.
 # This template provides a complete, runnable workflow.
 
@@ -112,13 +113,12 @@ df_final = pd.merge(df_raw, df_ai, on="title", how="left")
 
 # --- Styling Pandas DataFrames ---
 styled_df = df_final.style.set_properties(**{
-    'text-align': 'left',
-    'white-space': 'pre-wrap',
-    'color': 'black'  # ✅ THIS IS THE FIX!
+    'text-align': 'left',
+    'white-space': 'pre-wrap',
 }).set_table_styles([
-    {'selector': 'th', 'props': [('text-align', 'left'), ('font-weight', 'bold'), ('color', 'black')]},
-    {'selector': 'tr:nth-of-type(odd)', 'props': [('background-color', '#f9f9f9')]},
-    {'selector': 'tr:nth-of-type(even)', 'props': [('background-color', 'white')]}
+    {'selector': 'th', 'props': [('text-align', 'left'), ('font-weight', 'bold')]},
+    {'selector': 'tr:nth-of-type(odd)', 'props': [('background-color', '#f9f9f9')]},
+    {'selector': 'tr:nth-of-type(even)', 'props': [('background-color', 'white')]}
 ]).hide(axis="index")
 
 display(styled_df)
@@ -150,3 +150,4 @@ try:
     print(f"✅ Success! Data exported to '{output_filename}'")
 except Exception as e:
     print(f"❌ Failed to export to Excel: {e}")
+"""

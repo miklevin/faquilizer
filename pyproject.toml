@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "faqulizer"
-version = "0.1.0"
+version = "0.1.6"
 authors = [
   { name="Mike Levin", email="pipulate@gmail.com" },
 ]
@@ -28,9 +28,6 @@ dependencies = [
 [project.urls]
 "Homepage" = "https://github.com/miklevin/pipulate"
 
-# ✅ THE FIX IS HERE
+# ✅ MANUAL OVERRIDE: EXPLICITLY DECLARE THE PACKAGE
 [tool.setuptools]
-package-dir = {"" = "src"}
-
-[tool.setuptools.packages.find]
-where = ["src"]
+packages = ["faquilizer"]
